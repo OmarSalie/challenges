@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Generic Coffee Shop Survey</title>
+  </head>
+  <body>
+    <div>
+      <h1>Generic Coffee Shop Survey</h1>
+      <div>
+        <form>
+          <table border="0">
+            <tr>
+              <th colspan="2" align="left"><h2>Participant Details</h2></th>
+            </tr>
+
+            <tr>
+              <td align="right"><label>Name: </label></td>
+              <td><input type="text" name="name" placeholder="Full Name" required></td>
+            </tr>
+
+            <tr>
+              <td align="right"><label>Contact Number: </label></td>
+              <td><input type="text" pattern="[0-9+() ]{10,16}" title="10 didgits only (12 digits for +27)" required></td>
+            </tr>
+
+            <tr>
+              <td align="right"><label>Gender: </label></td>
+              <td><select>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select></td>
+            </tr>
+
+            <tr>
+              <td align="right"><label>Date of Birth: </label></td>
+              <td><input type="date"></td>
+            </tr>
+
+            <tr>
+              <td align="right"><label>Password: </label></td>
+              <td><input type="password"></td>
+            </tr>
+          </table>
+
+          <hr>
+
+          <h2>Survey Questions</h2>
+          <ol>
+            <li><p>How often do you visit coffee shops?</p>
+                <p><input type="radio" name="visits" value="onceAweek">Once a Week</p>
+                <p><input type="radio" name="visits" value="twiceAweek">2+ a Week</p>
+                <p><input type="radio" name="visits" value="fourTimesAweek">4+ a Week</p>
+                <p><input type="radio" name="visits" value="sixTimesAweek">6+ a Week</p>
+                <p><input type="radio" name="visits" value="everyday">Everyday</p></li>
+
+            <li><p>What is your favorite coffee shop? Where is it located?</p>
+                <p><textarea name="favourite" rows="10" cols="40" style="resize:none"></textarea></p></li>
+
+            <li><p>What do you typically order to drink?</p>
+              <table border="0">
+                <tr>
+                    <td><input type="checkbox" name="drink" value="espre"> Espresso</td>
+                    <td><input type="checkbox" name="drink" value="double"> Double Espresso</td>
+                    <td><input type="checkbox" name="drink" value="macc"> Short Macchiato</td>
+                    <td><input type="checkbox" name="drink" value="longMacc"> Long Macchiato</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="drink" value="ristre"> Ristretto</td>
+                    <td><input type="checkbox" name="drink" value="black"> Long Black</td>
+                    <td><input type="checkbox" name="drink" value="latte"> Café Latte</td>
+                    <td><input type="checkbox" name="drink" value="cappu"> Cappuccino</td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="drink" value="white"> Flat White</td>
+                    <td><input type="checkbox" name="drink" value="piccLatte"> Piccolo Latte</td>
+                    <td><input type="checkbox" name="drink" value="mocha"> Mocha</td>
+                    <td><input type="checkbox" name="drink" value="affo"> Affogato</td>
+                </tr>
+              </table></li>
+
+            <li><p>Do you prefer large, national chain coffee shops or small, privately owned coffee shops?</p>
+                <p><textarea rows="10" cols="40" name="prefer" style="resize:none"></textarea></p></li>
+          </ol>
+
+          <ul style="list-style: none;">
+            <li>
+              <table border="0">
+                <tr>
+                  <td>Any comments:</td>
+                </tr>
+
+                <tr>
+                  <td><textarea name="commemnts" rows="20" cols="40" style="resize:none"></textarea></td>
+                </tr>
+
+                <tr>
+                  <td align="center"><button type="submit">Submit Survey</button> <button type="reset">Clear All</button></td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

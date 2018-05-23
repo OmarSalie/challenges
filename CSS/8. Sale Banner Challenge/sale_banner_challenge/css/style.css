@@ -1,0 +1,32 @@
+.ribbon {
+  /* width: 100px;
+  height: 20px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  transform: rotate(45deg); */
+
+  width: 200px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  transform: rotate(-45deg);
+  border: 1px solid red;
+
+  /* border:       50px solid blue;         All borders set
+  border-left:  30px solid transparent;  Remove left border
+  border-right: 30px solid transparent;  Right transparent
+  width:        100px;                   Increase element Width
+  border-top: 0;
+  transform: rotate(45deg);
+  bottom: 20px; */
+}
+
+.ribbon a {
+  color: white;
+  text-decoration: none;
+}

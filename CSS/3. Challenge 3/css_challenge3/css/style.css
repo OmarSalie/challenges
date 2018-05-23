@@ -1,0 +1,20 @@
+/* I made the default browser font of 16px be 1px */
+html {
+  font-size: 6.25%;
+}
+body p {
+  width: 200px;
+  height: 20px;
+  padding: 50px;
+  text-align: center;
+  /* 18rem = 18px */
+  font-size: 18rem;
+  background-color: red;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  border-radius: 3px;
+  border: 1px solid maroon;
+  background: red linear-gradient(to top left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  box-shadow: 20px -100px 30px 7px white, 3px 11px 5px 0px black, 5px 10px black;
+
+}

@@ -1,0 +1,41 @@
+.box {
+  width: 200px; /*Set the width of the box class to 200 pixels*/
+  height: 200px; /*Set the height of the box class to 200 pixels*/
+  float: left; /*Make the box class float to the left*/
+}
+
+#b1 {
+  background-color: orange; /*Set the backgroud colour*/
+}
+
+#b2 {
+  background-color: maroon;
+}
+
+#b3 {
+  background-color: green;
+}
+
+#b4 {
+  background-color: blue;
+}
+
+/* Make the colour of the first box change when the cursor hovers over it */
+#b1:hover {
+  background-color: yellow;
+}
+
+/* Make the background colour of the second box change when the box is clicked, it will return to it's previous state when the mouse button is released */
+#b2:active {
+  background-color: red;
+}
+
+/* Make the width of the third box change to 600 pixels when the cursor hovers over it */
+#b3:hover {
+  width: 600px;
+}
+
+/* Make the width of the third box change to 50 pixels when the cursor hovers over it. This causes a flashing effect when hovering over more than 50 pixels of the original box */
+#b4:hover {
+  width: 50px;
+}

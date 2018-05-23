@@ -1,0 +1,22 @@
+/* Importing the font from Google. If there is no internet connection, the font will fail to load and use the fallback fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Making changes to paragraph 1 and 2 since I know those are the only paragraphs on my web page */
+p:nth-child(1) {
+  font: 18px/16px "Do Hyeon", sans-serif, "Source Code Pro", Inconsolata, "Lucida Console", Terminal ;
+}
+
+/* The font size and line height are changed to make the paragraphs more ledgable */
+p:nth-child(2) {
+  font: 18px/16px "Oswald", sans-serif, "Courier New", Courier, "Source Code Pro", Inconsolata;
+}
+
+/* By justifying the text, the paragraphs will look much better */
+p {
+  text-align: justify;
+}
