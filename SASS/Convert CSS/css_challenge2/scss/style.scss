@@ -1,0 +1,173 @@
+/* General setup */
+/* Remember to always comment*/
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border: {
+        top: 5px solid #71677C;
+        bottom: 5px solid #71677C;
+    }
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  p, li {
+    font: 14px/20px 'Lora', serif;
+    text: {
+        align: justify;
+    }
+  
+  }
+
+  section {
+      div {
+          p:first-of-type {
+            text: {
+                indent: 20px;
+            }
+          }
+      }
+  }
+
+  h1, h2 {
+    font: {
+        family: 'Black Han Sans', sans-serif;
+    }
+    letter-spacing: 2px;
+  }
+  
+  h1 {
+    font: {
+        size: 40px;
+    }
+    text: {
+        shadow: 5px 5px 12px cyan;
+    }
+  }
+
+  header {
+    background: {
+        image: url(../images/banner01.jpg);
+    }
+    text: {
+        align: center;
+    }
+  }
+  
+  body {
+    background: {
+        color: #61988E;
+    }
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+a {
+    &:link {
+        color: #576CA8;
+    }
+
+    &:visited {
+        color: #274690;
+    }
+
+    &:hover {
+        color: #484041;
+        text: {
+            decoration: none;
+        }
+    }
+}
+
+ul {
+    list-style-type: square;
+}
+
+nav{
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background: {
+            color: #61988E;
+        }
+        position: fixed;
+
+        li {
+            a {
+                display: block;
+                color: #274690;
+                padding: 12px;
+                text: {
+                    decoration: none;
+                }
+
+                &:hover {
+                    background: {
+                        color: #6B6D76;
+                    }
+                    color: #000;
+                }
+
+                &:link {
+                    color: #274690;
+                }
+
+                &:visited {
+                    color: #274690;
+                }
+            }
+        }
+    }
+}
+
+.bnw {
+    a {
+        background: {
+            position: right;
+            repeat: no-repeat;
+            size: 14px 14px;
+            color: #61988E;
+            image: url(../images/external01.png);
+        }
+    }
+}
