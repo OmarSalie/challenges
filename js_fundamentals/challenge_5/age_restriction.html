@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================================================================================================ -->
+    <!-- meta -->
+    <!-- ================================================================================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Age Restriction</title>
+
+    <!-- ================================================================================================ -->
+    <!-- styling -->
+    <!-- ================================================================================================ -->
+    <style>
+        #display {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ================================================================================================ -->
+    <!-- main container -->
+    <!-- ================================================================================================ -->
+    <main>   
+        <form method="POST">
+            <input type="number" id="age" name="age" placeholder="Please enter age" required>
+            <button id="check">Verify Age</button>
+        </form>
+        <div id="display"></div>
+    </main>
+    <!-- ================================================================================================ -->
+    <!-- javascript -->
+    <!-- ================================================================================================ -->
+    <script>
+        'use strict';
+
+        let age = document.getElementById("age");
+        let verify = document.getElementById("check");
+        let display = document.getElementById("display");
+        console.log(age);
+
+        verify.onclick = function() {
+            age = age.value;
+            if(age < 13) {
+                display.innerHTML = "You are too young to use the internet";
+            }
+            else {
+                display.innerHTML = "You are old enough to use the internet";
+            }
+        };
+    </script>
+</body>
+</html>

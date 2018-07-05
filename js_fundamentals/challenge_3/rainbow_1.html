@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="red">red</div>
+        <div id="orange">orange</div>
+        <div id="yellow">yellow</div>
+        <div id="green">green</div>
+        <div id="blue">blue</div>
+        <div id="indigo">indigo</div>
+        <div id="violet">violet</div>
+        
+    </main>
+
+    <!-- Scripting -->
+    <script>
+        
+        let red = document.getElementById("red");
+        let orange = document.getElementById("orange");
+        let yellow = document.getElementById("yellow");
+        let green = document.getElementById("green");
+        let blue = document.getElementById("blue");
+        let indigo = document.getElementById("indigo");
+        let violet = document.getElementById("violet");
+
+        red.style.height = "100px";
+        red.onclick = function(){
+            red.style.backgroundColor = "red";
+        }
+
+        orange.style.height = "100px";
+        orange.onclick = function(){
+            orange.style.backgroundColor = "orange";
+        }
+
+        yellow.style.height = "100px";
+        yellow.onclick = function(){
+            yellow.style.backgroundColor = "yellow";
+        }
+
+        green.style.height = "100px";
+        green.onclick = function(){
+            green.style.backgroundColor = "green";
+        }
+
+        blue.style.height = "100px";
+        blue.onclick = function(){
+            blue.style.backgroundColor = "blue";
+        }
+
+        indigo.style.height = "100px";
+        indigo.onclick = function(){
+            indigo.style.backgroundColor = "indigo";
+        }
+
+        violet.style.height = "100px";
+        violet.onclick = function(){
+            violet.style.backgroundColor = "violet";
+        }
+        
+
+        // let rainbow = [
+        //     document.getElementById("red"),
+        //     document.getElementById("orange"),
+        //     document.getElementById("yellow"),
+        //     document.getElementById("green"),
+        //     document.getElementById("blue"),
+        //     document.getElementById("indigo"),
+        //     document.getElementById("violet")];
+
+        // let rainbowColor = [
+        //     "red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+        // for(let i = 0; i < 7; i++){
+        //     rainbow[i].style.height = "200px";
+        //     rainbow[i].onclick = function(){
+        //         rainbow[i].style.backgroundColor = rainbowColor[i];
+        //     }
+        // }
+    </script>
+</body>
+</html>
