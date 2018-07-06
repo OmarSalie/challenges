@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================================================================================================ -->
+    <!-- meta -->
+    <!-- ================================================================================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Rainbow 2.0</title>
+
+    <!-- ================================================================================================ -->
+    <!-- styling -->
+    <!-- ================================================================================================ -->
+    <style>
+    </style>
+</head>
+<body>
+    <!-- ================================================================================================ -->
+    <!-- main container -->
+    <!-- ================================================================================================ -->
+    <main>  
+        <div id="red" class="rainbow">red</div>
+        <div id="orange" class="rainbow">orange</div>
+        <div id="yellow" class="rainbow">yellow</div>
+        <div id="green" class="rainbow">green</div>
+        <div id="blue" class="rainbow">blue</div>
+        <div id="indigo" class="rainbow">indigo</div>
+        <div id="violet" class="rainbow">violet</div> 
+    </main>
+    <!-- ================================================================================================ -->
+    <!-- javascript -->
+    <!-- ================================================================================================ -->
+    <script>
+        'use strict';
+
+        let rainbow = document.getElementsByClassName("rainbow");
+        
+        for(let i = 0; i < rainbow.length; i++) {
+            rainbow[i].style.height = "80px";
+            rainbow[i].style.backgroundColor = rainbow[i].id;
+        }
+
+
+    </script>
+</body>
+</html>

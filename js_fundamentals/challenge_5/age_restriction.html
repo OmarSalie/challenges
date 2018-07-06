@@ -16,6 +16,7 @@
     <style>
         #display {
             height: 100px;
+            border: 1px black dotted;
         }
     </style>
 </head>
@@ -24,10 +25,13 @@
     <!-- main container -->
     <!-- ================================================================================================ -->
     <main>   
-        <form method="POST">
-            <input type="number" id="age" name="age" placeholder="Please enter age" required>
+        <form action="">
+            <input type="number" id="age" name="age" placeholder="Please enter age">
             <button id="check">Verify Age</button>
+            <button id="clear">Clear</button>
         </form>
+        
+        <h1>Display: </h1>
         <div id="display"></div>
     </main>
     <!-- ================================================================================================ -->
@@ -36,20 +40,34 @@
     <script>
         'use strict';
 
-        let age = document.getElementById("age");
+        let input = document.getElementById("age");
         let verify = document.getElementById("check");
         let display = document.getElementById("display");
+        let clear = document.getElementById("clear")
+        let age;
         console.log(age);
 
-        verify.onclick = function() {
-            age = age.value;
+        verify.onclick = function(e) {
+            age = input.value;  // get value after onclick so the value can change on each click of the button
+
             if(age < 13) {
                 display.innerHTML = "You are too young to use the internet";
+                
             }
             else {
                 display.innerHTML = "You are old enough to use the internet";
+                // e.preventDefault();
+                // return false;
             }
+            e.preventDefault();
+            return false;
         };
+
+        clear.onclick = function() {
+            display.innerHTML = " ";
+        };
+
+        console.log(age);
     </script>
 </body>
 </html>
